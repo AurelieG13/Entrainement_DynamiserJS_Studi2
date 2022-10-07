@@ -2,12 +2,78 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
+/* style body */
 body {
-    background-color: grey;
+    background-image: url(../images/bgDarkOpac.jpg);
+    overflow: hidden;
+}
+
+@media screen and (width < 768px) {
+    body {
+        overflow: auto;
+    }
+}
+
+/* Header */
+header {
+    text-align: center;
+}
+
+
+/* style texts */
+h1, div, p {
+    color: aliceblue;
 }
 
 h1 {
+    color: rgb(46, 9, 9);
+    font-size: 72px;
+    font-weight: bolder;
+    text-decoration: double;
+    text-decoration: underline;
+    letter-spacing: 4px;
+    word-spacing: 8px;
+    text-shadow: 1px 1px 2px rgb(2030,123, 123),0 0 1em rgb(113, 251, 251);
+}
+
+/* btn */
+
+.butn {
+    background-color: rgba(64, 14, 14, 0.8);
     color: aliceblue;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+    font-size: 30px;
+    box-shadow: 0px 10px 30px rgba(64, 14, 14,0.8);
+}
+
+.butn:hover {
+    background-color: rgba(206, 122, 122, 0.8);
+    box-shadow: 0px 10px 30px rgba(203, 196, 196,0.8);
+}
+
+/* btn top */
+
+.btn_top {
+    margin-right: 10px;
+}
+
+.btn_top_flex {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* footer */
+.img_footer {
+    width: 450px;
+    height: 150px;
+}
+
+footer {
+    text-align: center;
 }
