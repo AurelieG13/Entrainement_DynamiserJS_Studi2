@@ -21,7 +21,71 @@
 <body>
     <header>
     <!-- Start Dice Decoration -->
+    <div class="box" id="boxId">
+        <div class="cube">
+            <!-- first-face -->
+            <div class="side first-face img1" id="firstFace">
+                <span class="dot">
+                </span>
+            </div>
 
+            <!--  second-face-->
+            <div class="side second-face img1" id="secondFace">
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+            <!--third-face  -->
+            <div class="side third-face img1" id="thirdFace">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <!--fourth-face  -->
+            <div class="side fourth-face img1" id="fourthFace">
+                <div class="column">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="column">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <!--fifth-face  -->
+            <div class="side fifth-face img1" id="fifthFace">
+                <div class="column">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+                <div class="column">
+                    <span class="dot"></span>
+                </div>
+
+                <div class="column">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <!--sixth-face  -->
+            <div class="side sixth-face img1" id="sixthFace">
+                <div class="column">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="column">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- End Dice Decoration -->
 
@@ -29,14 +93,14 @@
 
     <!-- Start Btn Game -->
         <div class="btn_top_flex">
-            <div class="container__btn btn_top">
-                <button class="butn" type="button">
+            <div class="container__btn btn_top" >
+                <button class="butn" type="button" id="resetGame">
                     New Game
                 </button>
             </div>
 
             <div class="container__btn btn_top">
-                <button class="butn" type="button">
+                <button class="butn" type="button" id="edit">
                     Edit Names
                 </button>
             </div>
@@ -46,47 +110,49 @@
 
     <!-- Start Board Game -->
     <main>
-        <div>
-            <div>
-                <div>
-                    <p>Player 1</p>
-                    <div>
+        <div class="container-fluid row container__board">
+            <div class="container__player1 activePlayer col-md-3 col-sm-3" id="contain__p1">
+                <div class="dice">
+                    <p class="player1 player__title" id="player1">Player 1</p>
+                    
+                    <div class="player__currentScore">
                         <p>Score Courant</p>
-                        <div>-</div>
+                        <div class="currentScore" id="currentScore1">-</div>
                     </div>
-                    <div>
+
+                    <div class="player__totalScore">
                         <p>Score Final</p>
-                        <div>-</div>
+                        <div class="totalScore player__score" id="totalScore1">-</div>
                     </div>
                 </div>
             </div>
 
-            <div>
-                <img src="#" alt="faceDice">
+            <div class="container__dice container col-md-3 col-sm-3">
+                <img class="imgDiceWhite" src="./images/dice6.png" alt="Dé Face 6">
 
                 <div class="container__btn btn_bottom">
-                    <button class="butn" type="button">
+                    <button class="butn" type="button" id="roll">
                         Roll Dice
                     </button>
                 </div>
 
-                <div class="container__btn btn_bottom">
+                <div class="container__btn btn_bottom" id="hold">
                     <button class="butn" type="button">
                         Hold
                     </button>
                 </div>
             </div>
 
-            <div>
-                <div>
-                    <p>Player 2</p>
-                    <div>
+            <div class="container__player2 col-md-3 col-sm-3" id="contain__p2">
+                <div class="dice">
+                    <p class="player2 player__title" id="player2">Player 2</p>
+                    <div class="player__currentScore">
                         <p>Score Courant</p>
-                        <div>-</div>
+                        <div class="currentScore" id="currentScore2">-</div>
                     </div>
-                    <div>
+                    <div class="player__totalScore">
                         <p>Score Final</p>
-                        <div>-</div>
+                        <div class="totalScore player__score" id="totalScore2">-</div>
                     </div>
                 </div>
             </div>
@@ -110,6 +176,6 @@
     <script src="./scripts_js/script.js"></script>
 
     <!-- End Script -->
-    
+
 </body>
 </html>
