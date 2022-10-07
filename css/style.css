@@ -11,7 +11,7 @@ body {
     overflow: hidden;
 }
 
-@media screen and (width < 768px) {
+@media screen and (width < 900px) {
     body {
         overflow: auto;
     }
